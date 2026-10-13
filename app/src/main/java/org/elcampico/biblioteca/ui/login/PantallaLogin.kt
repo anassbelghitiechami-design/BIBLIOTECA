@@ -125,7 +125,6 @@ fun PantallaLogin(
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth()
                     )
-
                     OutlinedTextField(
                         value = clave,
                         onValueChange = { clave = it },
@@ -140,7 +139,6 @@ fun PantallaLogin(
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth()
                     )
-
                     Button(
                         onClick = { onEntrar(usuario, clave) },
                         enabled = usuario.isNotBlank() && clave.isNotBlank(),
@@ -154,7 +152,6 @@ fun PantallaLogin(
                     }
                 }
             }
-
             TextButton(onClick = { /* … */ }) {
                 Text("¿Has olvidado la contraseña?", color = Color.White)
             }
